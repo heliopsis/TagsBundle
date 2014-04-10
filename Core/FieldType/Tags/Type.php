@@ -239,4 +239,13 @@ class Type extends FieldType
     {
         return $value === null || $value->tags == $this->getEmptyValue()->tags;
     }
+
+    /**
+     * Returns if the field type is considered searchable
+     * @return bool
+     */
+    public function isSearchable()
+    {
+        return true;
+    }
 }
